@@ -1,0 +1,26 @@
+{
+  "name": "ansible-role-elasticsearch",
+  "version": "1.0.0",
+  "description": "Ansible role for installing Elasticsearch",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DBLaci/ansible-role-elasticsearch.git"
+  },
+  "keywords": [
+    "ansible",
+    "elasticsearch"
+  ],
+  "author": "Jeff Geerling",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DBLaci/ansible-role-elasticsearch/issues"
+  },
+  "homepage": "https://github.com/DBLaci/ansible-role-elasticsearch#readme"
+}

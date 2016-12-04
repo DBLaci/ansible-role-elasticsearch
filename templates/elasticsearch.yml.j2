@@ -37,6 +37,9 @@
 #
 # path.logs: /path/to/logs
 #
+{% if elasticsearch_repo_list|length > 0 %}
+path.repo: ["{{ elasticsearch_repo_list|join('\", \"') }}"]
+{% endif %}
 # ----------------------------------- Memory -----------------------------------
 #
 # Lock the memory on startup:
