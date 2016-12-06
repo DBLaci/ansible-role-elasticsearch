@@ -14,6 +14,14 @@
     mode: 0750
   notify: restart elasticsearch
 
+- name: Create repo directories
+  file:
+    path: "{{ item }}"
+    state: directory
+    owner: elasticsearch
+    group: elasticsearch
+  with_items: "{{ elasticsearch_repo_list }}"
+
 - name: Start Elasticsearch.
   service: name=elasticsearch state=started enabled=yes
 
